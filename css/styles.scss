@@ -1,11 +1,15 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+$enable-responsive-font-sizes: true;
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  color: #fff;
+  background: url("../images/bg1.2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -51,9 +55,31 @@ body {
   margin-left: .75rem;
 }
 
+.btn-outline-success {
+  color: #90807c;
+  border-color: #90807c;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #535f80;
+  border-color: #fff;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #8a9ea7;
+  border-color: #fff;
+}
+
+.darker{
+  color: #000;
+}
+
 
 /* Featurettes
 ------------------------- */
+
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -83,8 +109,24 @@ body {
   }
 }
 
+.d-flex {
+  display: flex!important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .col-lg-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
