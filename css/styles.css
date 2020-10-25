@@ -75,6 +75,9 @@ body {
   line-height: 1;
   letter-spacing: -.05rem; }
 
+.toast-body {
+  color: #000; }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
